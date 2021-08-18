@@ -7,7 +7,7 @@ const instance = axios.create({
 
 instance.interceptors.request.use((config) => {
   //add api key to query params
-  config.params["api_key"] = process.env.REACT_APP_API_KEY;
+  config.params["api_key"] = process.env.REACT_APP_GIPHY_API_KEY;
 
   return config;
 });
