@@ -1,0 +1,74 @@
+@import "../../../assets/scss/base/variables";
+
+.button {
+  height: 40px;
+  padding: 0 1rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: $font-size--md;
+  font-weight: $font-weight--bold;
+  border-radius: $border-radius--sm;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+
+  &--solid,
+  &--primary {
+    background-color: $brand-color--primary;
+
+    &:hover {
+      background-color: $brand-color--secondary;
+    }
+
+    &:active {
+      background-color: $brand-color--tertiary;
+    }
+
+    &:disabled:hover {
+      background-color: $brand-color--primary;
+    }
+  }
+
+  &--secondary {
+    background-color: $bg-light--primary;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $bg-light--secondary;
+    }
+
+    &:active {
+      background-color: $bg-light--tertiary;
+    }
+
+    &:disabled:hover {
+      background-color: $bg-light--primary;
+    }
+  }
+
+  &--ghost,
+  &--transparent {
+    background-color: transparent;
+
+    &:disabled:hover {
+      background-color: transparent;
+    }
+  }
+
+  &--ghost {
+    &:hover {
+      background-color: $bg-light--primary;
+    }
+
+    &:active {
+      background-color: $bg-light--secondary;
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../assets/scss/base/variables";
+
+.search-input {
+  &__container {
+    display: flex;
+    align-items: center;
+
+    button {
+      height: 50px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $border-radius--lg;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    svg {
+      height: 1em;
+      width: 1em;
+    }
+  }
+  &__field {
+    height: 50px;
+    width: 100%;
+    padding: 0px 1rem;
+    font-size: $font-size--md;
+    border: 1px solid $bg-light--secondary;
+    border-radius: $border-radius--lg;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.09);
+    outline: none;
+
+    &:hover {
+      box-shadow: 0 5px 22px rgba(0, 0, 0, 0.13);
+    }
+
+    &:focus {
+      box-shadow: 0 5px 22px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @media #{$media-mobile-sm} {
+    &__container button,
+    &__field {
+      height: 45px;
+    }
+
+    &__container button {
+      width: 55px;
+      border-top-right-radius: $border-radius--md;
+      border-bottom-right-radius: $border-radius--md;
+    }
+
+    &__field {
+      font-size: $font-size--base;
+      border-top-left-radius: $border-radius--md;
+      border-bottom-left-radius: $border-radius--md;
+    }
+  }
+}

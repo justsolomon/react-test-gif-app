@@ -1,0 +1,24 @@
+@import "../../../assets/scss/base/variables";
+
+.error-message {
+  text-align: center;
+
+  &__icon,
+  &__description {
+    margin-bottom: 16px;
+  }
+
+  &__icon {
+    height: 28px;
+    width: 28px;
+    color: $tertiary-color;
+  }
+
+  &__description {
+    line-height: 20px;
+  }
+
+  &__button {
+    border-radius: 20px;
+  }
+}

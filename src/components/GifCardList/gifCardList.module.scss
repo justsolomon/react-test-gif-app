@@ -1,0 +1,37 @@
+@import "../../assets/scss/base/variables";
+
+.card-list {
+  display: flex;
+  margin-left: -1rem;
+  width: auto;
+
+  &__column {
+    padding-left: 1rem;
+    background-clip: padding-box;
+
+    & > div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media #{$media-mobile-sm} {
+    margin-left: -0.5rem;
+
+    &__column {
+      padding-left: 0.5rem;
+
+      & > div {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.search-header {
+  font-size: $font-size--xxl;
+  margin-bottom: 1rem;
+
+  span {
+    font-weight: bold;
+  }
+}

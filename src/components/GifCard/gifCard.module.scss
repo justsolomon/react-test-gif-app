@@ -1,0 +1,63 @@
+@import "../../assets/scss/base/variables";
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: $primary-color;
+  position: relative;
+  border-radius: $border-radius--md;
+
+  &__gif,
+  &__container {
+    height: 100%;
+    width: 100%;
+    border-radius: $border-radius--md;
+  }
+
+  &__user {
+    display: none;
+    align-items: center;
+    background-color: $bg-dark--tertiary;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+
+    &-avatar {
+      height: 40px;
+      width: 35px;
+      border-radius: $border-radius--sm;
+      margin-right: 0.5rem;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      font-weight: $font-weight--bold;
+      width: 100%;
+    }
+
+    &-displayname,
+    &-name {
+      width: 75%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &-displayname {
+      color: $white;
+      padding-bottom: 4px;
+      font-size: $font-size--base;
+    }
+
+    &-name {
+      color: $bg-light--primary;
+      font-size: $font-size--sm;
+    }
+  }
+
+  &:hover &__user {
+    display: flex;
+  }
+}

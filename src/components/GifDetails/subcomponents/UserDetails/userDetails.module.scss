@@ -1,0 +1,85 @@
+@import "../../../../assets/scss/base/variables";
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+  @media #{$media-tablet} {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  @media #{$media-mobile} {
+    width: 100%;
+  }
+
+  &__group {
+    display: flex;
+  }
+
+  &__avatar {
+    height: 45px;
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__display-name {
+    font-size: $font-size--base;
+    margin-bottom: 0.3rem;
+    font-weight: $font-weight--bold;
+  }
+
+  &__username {
+    color: $tertiary-color;
+    font-size: $font-size--sm;
+    font-weight: $font-weight--medium;
+  }
+
+  &__bio {
+    font-size: $font-size--base;
+    line-height: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  button {
+    color: $dark-grey;
+    margin-top: 1rem;
+
+    @media #{$media-desktop-sm} {
+      font-size: $font-size--base;
+    }
+  }
+
+  &__website {
+    margin-top: 1rem;
+    font-weight: $font-weight--medium;
+    font-size: $font-size--base;
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      svg {
+        height: $font-size--base;
+        width: $font-size--base;
+        margin-right: 0.2rem;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
