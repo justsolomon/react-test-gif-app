@@ -30,6 +30,7 @@
 .search-header {
   font-size: $font-size--xxl;
   margin-bottom: 1rem;
+  line-height: $font-size--xxl;
 
   span {
     font-weight: bold;
@@ -37,7 +38,6 @@
 
   @media #{$media-mobile} {
     font-size: $font-size--xl;
-    line-height: $font-size--xl;
   }
 
   @media #{$media-mobile-sm} {
