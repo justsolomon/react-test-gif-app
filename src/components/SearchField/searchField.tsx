@@ -12,7 +12,7 @@ const SearchField = ({ query, updateQuery }: ISearchField): JSX.Element => {
     <div className={styles["search-input__container"]}>
       <input
         className={styles["search-input__field"]}
-        placeholder="Search for gif"
+        placeholder="Search for GIF"
         value={query}
         onChange={updateQuery}
       />

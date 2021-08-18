@@ -7,7 +7,7 @@ exports[`<SearchField /> should render the SearchField component properly 1`] = 
   >
     <input
       class="search-input__field"
-      placeholder="Search for gif"
+      placeholder="Search for GIF"
       value="test"
     />
     <button
