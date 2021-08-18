@@ -53,14 +53,17 @@ const UserDetails = ({ user, source, loading }: IUserDetails) => {
       )}
       {user?.website_url || source ? (
         <div className={styles["user-details__website"]}>
-          <p>Source:</p>
+          <p className={styles["user-details__website-header"]}>Source:</p>
           <a
             target="_blank"
             rel="noreferrer"
             href={user?.website_url || source}
+            className={styles["user-details__website-link"]}
           >
             <ExternalLinkIcon />
-            {user?.website_url || source}
+            <p className={styles["user-details__website-link__text"]}>
+              {user?.website_url || source}
+            </p>
           </a>
         </div>
       ) : null}

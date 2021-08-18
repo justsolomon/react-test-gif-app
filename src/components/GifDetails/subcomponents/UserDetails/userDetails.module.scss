@@ -22,11 +22,13 @@
     height: 45px;
     width: 50px;
     margin-right: 0.5rem;
+    border-radius: $border-radius--sm;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
+    padding-top: 0.2rem;
   }
 
   &__display-name {
@@ -61,19 +63,26 @@
     font-weight: $font-weight--medium;
     font-size: $font-size--base;
 
-    p {
+    &-header {
       margin-bottom: 0.5rem;
     }
 
-    a {
+    &-link {
       color: $secondary-color;
       text-decoration: none;
       display: flex;
       align-items: center;
 
+      &__text {
+        width: 80%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
       svg {
-        height: $font-size--base;
-        width: $font-size--base;
+        height: $font-size--md;
+        width: $font-size--md;
         margin-right: 0.2rem;
       }
 

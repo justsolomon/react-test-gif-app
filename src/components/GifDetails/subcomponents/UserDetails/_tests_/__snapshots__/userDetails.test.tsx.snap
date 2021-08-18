@@ -42,10 +42,13 @@ exports[`<UserDetails /> should render the user details component properly 1`] =
     <div
       class="user-details__website"
     >
-      <p>
+      <p
+        class="user-details__website-header"
+      >
         Source:
       </p>
       <a
+        class="user-details__website-link"
         href="http://www.roosterteeth.com"
         rel="noreferrer"
         target="_blank"
@@ -53,7 +56,11 @@ exports[`<UserDetails /> should render the user details component properly 1`] =
         <svg>
           link.svg
         </svg>
-        http://www.roosterteeth.com
+        <p
+          class="user-details__website-link__text"
+        >
+          http://www.roosterteeth.com
+        </p>
       </a>
     </div>
   </div>
