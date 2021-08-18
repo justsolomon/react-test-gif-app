@@ -16,6 +16,7 @@
 
   &__group {
     display: flex;
+    margin-bottom: 1rem;
   }
 
   &__avatar {
@@ -46,12 +47,12 @@
   &__bio {
     font-size: $font-size--base;
     line-height: 1.1rem;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   button {
     color: $dark-grey;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     @media #{$media-desktop-sm} {
       font-size: $font-size--base;
@@ -59,7 +60,7 @@
   }
 
   &__website {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: $font-weight--medium;
     font-size: $font-size--base;
 

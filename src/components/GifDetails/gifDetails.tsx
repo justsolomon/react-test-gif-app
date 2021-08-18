@@ -13,12 +13,12 @@ const GifDetails = ({ gif, loading }: { gif: IGif; loading: boolean }) => {
       />
       <div className={styles["gif-container"]}>
         <p className={styles["gif-title"]}>
-          {gif?.title || <Skeleton width={300} />}
+          {gif?.title || <Skeleton width={200} />}
         </p>
         {gif.images ? (
           <img src={gif?.images?.original?.url} alt="Original gif url" />
         ) : (
-          <Skeleton height={300} width={500} />
+          <Skeleton height={200} width={350} />
         )}
       </div>
     </div>

@@ -13,7 +13,7 @@ interface IUserDetails {
 const UserDetails = ({ user, source, loading }: IUserDetails) => {
   return (
     <div className={styles["user-details"]}>
-      {user && !loading ? (
+      {user || loading ? (
         <div className={styles["user-details__group"]}>
           {!loading ? (
             <img
@@ -22,14 +22,16 @@ const UserDetails = ({ user, source, loading }: IUserDetails) => {
               className={styles["user-details__avatar"]}
             />
           ) : (
-            <Skeleton height={40} width={40} />
+            <div style={{ marginRight: "0.5rem" }}>
+              <Skeleton height={40} width={50} />
+            </div>
           )}
           <div className={styles["user-details__info"]}>
             <p className={styles["user-details__display-name"]}>
-              {loading ? <Skeleton /> : user?.display_name}
+              {loading ? <Skeleton width={100} /> : user?.display_name}
             </p>
             <p className={styles["user-details__username"]}>
-              {loading ? <Skeleton /> : `@${user?.username}`}
+              {loading ? <Skeleton width={100} /> : `@${user?.username}`}
             </p>
           </div>
         </div>
