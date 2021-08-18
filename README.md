@@ -1,6 +1,8 @@
 # Gif App
 
-A simple GIF search app based on the Giphy API. Demo: [https://gif-test-app.netlify.app/](https://gif-test-app.netlify.app/)
+A simple GIF search app based on the Giphy API.
+
+Demo: [https://gif-test-app.netlify.app/](https://gif-test-app.netlify.app/)
 
 ## Getting Started
 
