@@ -37,6 +37,7 @@
 
   @media #{$media-mobile} {
     font-size: $font-size--xl;
+    line-height: $font-size--xl;
   }
 
   @media #{$media-mobile-sm} {
