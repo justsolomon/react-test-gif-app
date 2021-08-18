@@ -1,5 +1,4 @@
  <svg
-    className={styles["error-message__icon"]}
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"

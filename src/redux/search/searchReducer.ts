@@ -31,7 +31,8 @@ const searchReducer = (
         data: query === state.query ? state.data : [],
         loading: true,
         query,
-        error: ""
+        error: "",
+        success: false
       };
     case SEARCH_GIFS_SUCCESS:
       const { data, pagination } = action.payload as SearchResponseData;

@@ -12,7 +12,7 @@ import { ErrorMessage } from "components/global/ErrorMessage";
 
 const SearchResultsContainer = (): JSX.Element => {
   const { query: initialQuery } = useSearchQuery();
-  const { data, loading, error, nextPage, query, page, totalCount } =
+  const { data, loading, error, nextPage, query, page, totalCount, success } =
     useSelector((state: RootState) => state.searchResults);
 
   const { ref, inView } = useInView({ threshold: 0.5 });
@@ -52,6 +52,10 @@ const SearchResultsContainer = (): JSX.Element => {
           </p>
           <GifCardList gifs={data} loaderRef={ref} nextPage={nextPage} />
         </>
+      ) : success ? (
+        <p className={styles["search-header"]} style={{ textAlign: "center" }}>
+          No results found for <span>{query}</span>
+        </p>
       ) : null}
     </>
   );
