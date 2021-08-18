@@ -29,8 +29,8 @@ const GifCardList = ({
       columnClassName={styles["card-list__column"]}
       data-testid="card-list"
     >
-      {gifs.map((gif) => (
-        <GifCard gif={gif} />
+      {gifs.map((gif, index) => (
+        <GifCard gif={gif} key={index} />
       ))}
       {nextPage ? (
         <div ref={loaderRef} data-testid="card-list__loader">
