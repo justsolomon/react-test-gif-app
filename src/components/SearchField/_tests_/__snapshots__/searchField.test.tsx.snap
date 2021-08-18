@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchField /> should render the SearchField component properly 1`] = `
+<DocumentFragment>
+  <div
+    class="search-input__container"
+  >
+    <input
+      class="search-input__field"
+      placeholder="Search for gif"
+      value="test"
+    />
+    <button
+      class="button  button--solid button--none "
+      type="submit"
+    >
+      <svg>
+        search.svg
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;

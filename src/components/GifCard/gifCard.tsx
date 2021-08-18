@@ -12,7 +12,10 @@ const GifCard = ({ gif }: IGifCard): JSX.Element => {
   const { images } = gif;
 
   return (
-    <LazyLoad once placeholder={<Skeleton height={images.original.height} />}>
+    <LazyLoad
+      once
+      placeholder={<Skeleton height={images.original.height || 150} />}
+    >
       <Link to={`/gif/${gif.id}`} className={styles["card"]}>
         <div className={styles["card__container"]}>
           <img

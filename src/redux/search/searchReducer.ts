@@ -53,7 +53,7 @@ const searchReducer = (
           })
         ],
         page,
-        nextPage: (page + 1) * 20 < pagination.total_count,
+        nextPage: (page + 1) * 50 < pagination.total_count,
         totalCount: pagination.total_count
       };
     case SEARCH_GIFS_FAILURE:

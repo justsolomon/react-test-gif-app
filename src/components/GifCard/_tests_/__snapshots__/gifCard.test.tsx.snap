@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifCard /> should render the GIF card component properly 1`] = `
+<DocumentFragment>
+  <div
+    class="lazyload-wrapper "
+  >
+    <span>
+      <span
+        class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+      >
+        ‌
+      </span>
+    </span>
+  </div>
+</DocumentFragment>
+`;

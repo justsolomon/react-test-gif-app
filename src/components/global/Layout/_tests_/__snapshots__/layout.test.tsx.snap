@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> should render the layout component properly 1`] = `
+<DocumentFragment>
+  <div
+    class="layout"
+  >
+    <div
+      class="layout__background"
+    >
+      <form>
+        <div
+          class="search-input__container"
+        >
+          <input
+            class="search-input__field"
+            placeholder="Search for gif"
+            value=""
+          />
+          <button
+            class="button  button--solid button--none "
+            type="submit"
+          >
+            <svg>
+              search.svg
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="layout__content"
+    >
+      Test Layout
+    </div>
+  </div>
+</DocumentFragment>
+`;

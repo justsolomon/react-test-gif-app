@@ -27,12 +27,13 @@ const GifCardList = ({
       breakpointCols={breakpoints}
       className={styles["card-list"]}
       columnClassName={styles["card-list__column"]}
+      data-testid="card-list"
     >
       {gifs.map((gif) => (
         <GifCard gif={gif} />
       ))}
       {nextPage ? (
-        <div ref={loaderRef}>
+        <div ref={loaderRef} data-testid="card-list__loader">
           <Spinner />
         </div>
       ) : null}

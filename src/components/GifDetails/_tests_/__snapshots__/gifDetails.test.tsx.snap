@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifDetails /> should render the GIF details component properly 1`] = `
+<DocumentFragment>
+  <div
+    class="gif-details"
+  >
+    <div
+      class="user-details"
+    >
+      <div
+        class="user-details__group"
+      >
+        <img
+          alt="User avatar"
+          class="user-details__avatar"
+          src="https://media3.giphy.com/avatars/roosterteeth/WSNaHIPXtMHL.jpg"
+        />
+        <div
+          class="user-details__info"
+        >
+          <p
+            class="user-details__display-name"
+          >
+            Rooster Teeth
+          </p>
+          <p
+            class="user-details__username"
+          >
+            @roosterteeth
+          </p>
+        </div>
+      </div>
+      <p
+        class="user-details__bio"
+      >
+        Premium dumb content. Home of Achievement Hunter, Funhaus, RWBY, RvB, a ton of podcasts, new stuff all the time, and the best community ever.
+      </p>
+      <button
+        class="button  button--solid button--secondary "
+        type="button"
+      >
+        View profile on Giphy
+      </button>
+      <div
+        class="user-details__website"
+      >
+        <p>
+          Source:
+        </p>
+        <a
+          href="http://www.roosterteeth.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg>
+            link.svg
+          </svg>
+          http://www.roosterteeth.com
+        </a>
+      </div>
+    </div>
+    <div
+      class="gif-container"
+    >
+      <p
+        class="gif-title"
+      >
+        Work From Home Hello GIF by Rooster Teeth
+      </p>
+      <img
+        alt="Original gif url"
+        src="https://media3.giphy.com/media/QAU5Bd0Js9w3arZ4UD/giphy.gif"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

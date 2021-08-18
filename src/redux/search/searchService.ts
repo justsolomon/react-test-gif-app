@@ -15,7 +15,7 @@ const searchGifs = (query: string, page: number) => {
         params: {
           q: query,
           offset: page,
-          limit: 20
+          limit: 50
         }
       })
       .then((res) => {

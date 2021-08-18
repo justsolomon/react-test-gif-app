@@ -51,12 +51,16 @@ const UserDetails = ({ user, source, loading }: IUserDetails) => {
       ) : (
         <Skeleton height={40} />
       )}
-      {user?.website || source ? (
+      {user?.website_url || source ? (
         <div className={styles["user-details__website"]}>
           <p>Source:</p>
-          <a target="_blank" rel="noreferrer" href={user?.website || source}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={user?.website_url || source}
+          >
             <ExternalLinkIcon />
-            {user?.website || source}
+            {user?.website_url || source}
           </a>
         </div>
       ) : null}
