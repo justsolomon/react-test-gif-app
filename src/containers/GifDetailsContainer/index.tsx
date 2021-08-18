@@ -24,7 +24,7 @@ const GifDetailsContainer = () => {
 
     if (gif) dispatch(fetchGifSuccess(gif));
     else dispatch(fetchGif(id));
-  }, [id]);
+  }, [id, dispatch, searchResults]);
 
   return (
     <>

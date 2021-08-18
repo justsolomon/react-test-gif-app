@@ -20,13 +20,13 @@ const SearchResultsContainer = (): JSX.Element => {
 
   useEffect(() => {
     if (initialQuery) dispatch(searchGifs(initialQuery, 0));
-  }, [initialQuery]);
+  }, [initialQuery, dispatch]);
 
   useEffect(() => {
     if (inView && nextPage) {
       dispatch(searchGifs(query, page + 1));
     }
-  }, [inView, query, nextPage, page]);
+  }, [inView, query, nextPage, page, dispatch]);
 
   return (
     <>
